@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.game {
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  width: 60%;
+  height: 70%;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  overflow: hidden;
+}
+.display {
+  /* background-color: rgb(87, 87, 87); */
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.direction-control {
+  position: relative;
+  /* border: 1px solid white; */
+  height: 150px;
+  width: 150px;
+}
+
+.btn-direction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background: rgb(64, 200, 253);
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.125);
+}
+
+.btn-direction:hover {
+  transform: scale(1.05);
+  transition: 0.1s ease-in transform;
+}
+
+.up {
+  left: 53px;
+}
+.down {
+  left: 53px;
+  bottom: 0px;
+}
+.left {
+  left: 0px;
+  top: 50px;
+}
+.right {
+  right: 0px;
+  top: 50px;
+}
+
+#canvas {
+  border: 1px solid black;
+}
+.score {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  border: 10px;
+}
